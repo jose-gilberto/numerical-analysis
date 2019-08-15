@@ -18,7 +18,7 @@ LOWER, HIGHER, EPSILON, NMAX, i = 1, 2, 0.01, 10000, 1
 while i <= NMAX:
     p = LOWER + (HIGHER - LOWER)/2 # compute P_i
     f_p, f_lower = func(p), func(LOWER)
-    plt.plot([p], [f_p], color = 'red', marker = 'o', markersize = 2)
+    plt.plot([p], [0], color = 'red', marker = 'o', markersize = 2)
     
     if (f_p == 0) or ((HIGHER - LOWER)/2 < EPSILON):
         print('Procedure completed successfully, the result is {}'.format(p))
